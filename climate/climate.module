@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+ function climate_theme($existing, $type, $theme, $path) {
+  // Custom template to render weather data on a page.
+  return [
+    'weather_rendered_data' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function climate_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'climate/weather';
+}

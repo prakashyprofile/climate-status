@@ -1,0 +1,6 @@
+{{ attach_library('material/weather') }}
+<div class="outer-wrapper">
+  {% for key, value in data %}
+    <div class="col-md-4">{{ key }} - {{ value }}</div>
+  {% endfor %}
+</div>

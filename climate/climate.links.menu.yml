@@ -1,0 +1,6 @@
+climate.weather:
+  title: 'climate status'
+  description: 'Displays climate status location'
+  parent: main
+  menu_name: main
+  route_name: climate.weather_route

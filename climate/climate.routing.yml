@@ -1,0 +1,15 @@
+climate.weather_route:
+  path: '/weather-today'
+  defaults:
+    _controller: '\Drupal\climate\Controller\showWeather::getWeather'
+    _title: 'See weather status'
+  requirements:
+    _permission: 'access content'
+
+climate.weather_route_form:
+  path: '/weather'
+  defaults:
+    _form: '\Drupal\climate\Form\showWeatherForm'
+    _title: 'See weather status'
+  requirements:
+    _permission: 'access content'
